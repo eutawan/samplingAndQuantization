@@ -57,6 +57,7 @@ public class quantizationImage {
                 newImage.setRGB(x, y, color.getRGB());
             }
         }
+        System.out.println("imagem adicionada com sucesso!");
         ImageIO.write(newImage, "jpg", new File("src/images/turtle_image_quantized.jpg"));
     }
 }
