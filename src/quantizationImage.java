@@ -7,7 +7,7 @@ import java.io.IOException;
 public class quantizationImage {
     public static void main(String[] args) throws IOException {
 
-        BufferedImage image = ImageIO.read(new File("src/turtle_image.jpg"));
+        BufferedImage image = ImageIO.read(new File("src/images/turtle_image.jpg"));
 
         int width = image.getWidth();
         int heigth = image.getHeight();
@@ -57,6 +57,6 @@ public class quantizationImage {
                 newImage.setRGB(x, y, color.getRGB());
             }
         }
-        ImageIO.write(newImage, "jpg", new File("src/turtle_image_quantized.jpg"));
+        ImageIO.write(newImage, "jpg", new File("src/images/turtle_image_quantized.jpg"));
     }
 }
